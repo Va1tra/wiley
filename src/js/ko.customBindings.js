@@ -20,10 +20,6 @@ ko.bindingHandlers.contentEditableInput = {
 
         if (element.innerText !== value()) {
             element.innerText = value();
-
-            // ko.utils.moveCaretToEnd(input[0]);
-            // ko.utils.scrollToRightEnd(input[0]);
-            // input.trigger('DOMSubtreeModified').trigger('input'); // to trigger jquery.richInput._onChange to update selection
         }
     }
 };
