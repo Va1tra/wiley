@@ -1,0 +1,35 @@
+{
+  "name": "wiley",
+  "version": "0.0.1",
+  "description": "todo list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Va1tra/wiley.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Va1tra/wiley/issues"
+  },
+  "homepage": "https://github.com/Va1tra/wiley#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.3.3",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.4.0",
+    "gulp-sass": "^3.1.0",
+    "html-loader": "^0.4.5",
+    "knockout": "^3.4.2",
+    "knockout-mapping": "^2.6.0",
+    "webpack": "^2.3.3",
+    "webpack-config": "^7.0.0"
+  }
+}

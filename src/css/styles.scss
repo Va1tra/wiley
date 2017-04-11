@@ -1,0 +1,30 @@
+.task-list {
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.task {
+  font-size: 16px;
+  border: 1px solid #eee;
+  padding: 5px;
+
+  &_name {
+    margin-bottom: 5px;
+  }
+
+  &:not(.__completed):hover {
+    .task_name {
+      cursor: pointer;
+    }
+  }
+
+  &.__completed {
+    .task_name {
+      text-decoration: line-through;
+    }
+  }
+
+  + .task {
+    margin-top: 10px;
+  }
+}

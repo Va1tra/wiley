@@ -1,0 +1,19 @@
+<div class="task-list_item task" data-bind="
+            css: {
+                __completed: task.completed
+            }">
+    <div class="task_name" data-bind="
+                attr: {
+                    contenteditable: !task.completed()
+                },
+                event: {
+                    blur: onBlur
+                },
+                contentEditableInput: taskName
+                ">
+    </div>
+    <div class="task_actions">
+        <button data-bind="visible: !task.completed(), click: completeTask">Complete</button>
+        <button data-bind="click: removeTask">Remove</button>
+    </div>
+</div>

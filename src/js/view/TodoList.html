@@ -1,0 +1,24 @@
+<h1>TODO LIST</h1>
+<!-- ko if: tasks().length > 0 -->
+    <div class="task-list" data-bind="foreach: tasks">
+        <!-- ko component: {
+            name: 'todoListItem',
+            params: {
+                task: $data,
+                removeTask: $parent.removeTask,
+                completeTask: $parent.completeTask,
+                renameTask: $parent.renameTask
+            }} -->
+        <!-- /ko -->
+    </div>
+<!-- /ko -->
+
+<!-- ko ifnot: tasks().length > 0 -->
+    <div class="task-list __empty">No tasks.</div>
+<!-- /ko -->
+
+<div class="add-task">
+    <label for="newTaskName">Task Name:</label>
+    <input id="newTaskName" type="text" data-bind="value: newTaskName">
+    <button data-bind="click: addTask">Add Task</button>
+</div>
